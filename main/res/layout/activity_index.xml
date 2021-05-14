@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context=".IndexActivity"
+    >
+!-------------------INDEX-------------------!
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="index"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:fontFamily="@font/bacanaregular">
+    </TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center">
+!-------------------DAY-------------------!
+    <LinearLayout
+        android:id="@+id/dayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/day">
+    </ImageView>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monumentvalley"
+        android:text="day"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:textStyle="bold">
+    </TextView>
+    </LinearLayout>
+!-------------------MONTH-------------------!
+    <LinearLayout
+        android:id="@+id/monthButton"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/month">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/monumentvalley"
+            android:text="month"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="40sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+!-------------------KEY-------------------!
+    <LinearLayout
+        android:id="@+id/keyButton"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/key1">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/monumentvalley"
+            android:text="key"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="40sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+!-------------------GOAL-------------------!
+    <LinearLayout
+        android:id="@+id/goalButton"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/award">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/monumentvalley"
+            android:text="goal"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+!-------------------NOTE-------------------!
+    <LinearLayout
+        android:id="@+id/noteButton"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/note">
+        </ImageView>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/monumentvalley"
+            android:text="note"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

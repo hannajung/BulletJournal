@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context=".DayActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+    !-------------------MENU-------------------!
+        <ImageView
+            android:id="@+id/menuButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/menu"></ImageView>
+
+!-------------------DAY-------------------!
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bacanaregular"
+            android:gravity="center"
+            android:text="DAY"
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+!-------------------Date--------------------!
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/journalArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30sp">
+                </TextView>
+                <TextView
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textColor="#A4A4A4"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="10dp"
+                    >
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/newList"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tasksRecyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:nestedScrollingEnabled="true"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/deleteListButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/trashcan"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        !-------------------Button--------------------!
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/guide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="+ 버튼을 눌러 날짜를 추가하세요"
+                android:textSize="20sp">
+
+            </TextView>
+            <Button
+                android:id="@+id/addDateButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_plus_btn"
+                android:text="+"
+                android:textSize="40sp"
+                app:backgroundTint="@null"
+                android:layout_margin="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
